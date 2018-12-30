@@ -16,13 +16,15 @@
         <activity android:name=".MainActivityFragmentViewModel">
         </activity>
         <activity android:name=".IntentClassActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".KotlinActivity">
+        </activity>
+        <activity android:name=".recyclerView.RecyclerViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 

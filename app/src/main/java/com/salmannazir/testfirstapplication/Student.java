@@ -21,7 +21,11 @@ public class Student {
         this.subject = subject;
         this.profilePhoto = profilePhoto;
     }
-
+    public Student(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
     public Student() {
 
     }
