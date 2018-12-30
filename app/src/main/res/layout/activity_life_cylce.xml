@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:textSize="@dimen/login_text_size"
+              android:text="@string/login_form_text"
+              android:layout_centerHorizontal="true"
+              android:textColor="@color/titleColour"
+              android:id="@+id/form"
+    />
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/etUserName"
+              android:layout_below="@+id/form"
+              android:hint="@string/user_name_hint"
+              android:imeOptions="actionNext"
+              android:inputType="textPersonName"
+              android:textSize="30sp"
+    />
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/etPassword"
+              android:inputType="numberPassword"
+              android:hint="@string/password_hint"
+              android:imeOptions="actionNext"
+              android:textSize="30sp"
+              android:layout_below="@+id/etUserName"
+    />
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:text="@string/submit_button_text"
+            android:background="@drawable/submit_button_background"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etPassword"
+    />
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>

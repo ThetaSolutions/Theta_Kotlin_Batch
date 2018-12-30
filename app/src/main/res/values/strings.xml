@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kotlin Theta</string>
+    <string name="login_form_text">Login Form</string>
+    <string name="user_name_hint">Please enter user name</string>
+    <string name="password_hint">Please enter Password</string>
+    <string name="submit_button_text">Submit</string>
+</resources>
