@@ -1,6 +1,8 @@
 package com.salmannazir.testfirstapplication;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
 
     private String firstName;
     private String lastName;
