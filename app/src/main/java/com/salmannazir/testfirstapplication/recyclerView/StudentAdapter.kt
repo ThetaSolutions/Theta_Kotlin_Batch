@@ -7,11 +7,13 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.salmannazir.testfirstapplication.MainActivity
 import com.salmannazir.testfirstapplication.R
 import com.salmannazir.testfirstapplication.Student
+import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.recycler_view_single_item.view.*
 
 
@@ -39,6 +41,7 @@ class StudentAdapter( var onClick: OnItemClick, var context: Activity) : Recycle
         val firstName: TextView = viewHolder.itemView.first_name
         val lastName: TextView = viewHolder.itemView.last_name
         val age: TextView = viewHolder.itemView.age
+        val image: ImageView = viewHolder.itemView.testImage
 
 
         val student: Student
@@ -47,6 +50,7 @@ class StudentAdapter( var onClick: OnItemClick, var context: Activity) : Recycle
         firstName.text = student.firstName
         lastName.text = student.lastName
         age.text = student.age.toString()
+        image.setImageResource(student.profilePhoto)
 
         viewHolder.itemView.setOnClickListener {
             onClick.onClick(position, viewHolder.itemView)

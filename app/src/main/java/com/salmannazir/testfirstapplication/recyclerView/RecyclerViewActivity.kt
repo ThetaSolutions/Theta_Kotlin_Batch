@@ -59,16 +59,14 @@ class RecyclerViewActivity : AppCompatActivity(), OnItemClick {
 
     private fun getStudents(): ArrayList<Student> {
         val studentList = arrayListOf<Student>()
-        studentList.add(Student("salman", "Nazir", 27))
-        studentList.add(Student("abc", "xyz", 20))
-        studentList.add(Student("adf", "ewr", 21))
-        studentList.add(Student("dsagqrw", "grg", 23))
-        studentList.add(Student("agadg", "fads", 29))
-        studentList.add(Student("salman", "Nazir", 27))
-        studentList.add(Student("abc", "xyz", 20))
-        studentList.add(Student("adf", "ewr", 21))
-        studentList.add(Student("dsagqrw", "grg", 23))
-        studentList.add(Student("agadg", "fads", 29))
+        studentList.add(Student("salman", "Nazir", 27, R.drawable.ic_thumb))
+        studentList.add(Student("abc", "xyz", 20,R.drawable.ic_transfer))
+        studentList.add(Student("adf", "ewr", 21, R.drawable.ic_tag_faces))
+        studentList.add(Student("dsagqrw", "grg", 23, R.drawable.ic_vpn))
+        studentList.add(Student("salman", "Nazir", 27, R.drawable.ic_thumb))
+        studentList.add(Student("abc", "xyz", 20,R.drawable.ic_transfer))
+        studentList.add(Student("adf", "ewr", 21, R.drawable.ic_tag_faces))
+        studentList.add(Student("dsagqrw", "grg", 23, R.drawable.ic_vpn))
 
         return studentList
     }

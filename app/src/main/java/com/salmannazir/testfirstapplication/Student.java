@@ -10,7 +10,7 @@ public class Student implements Serializable {
     private int mobile;
     private String gender;
     private String subject;
-    private String profilePhoto;
+    private int profilePhoto;
 
     public Student(String firstName, String lastName, int age,
                    int mobile, String gender, String subject,
@@ -21,12 +21,13 @@ public class Student implements Serializable {
         this.mobile = mobile;
         this.gender = gender;
         this.subject = subject;
-        this.profilePhoto = profilePhoto;
     }
-    public Student(String firstName, String lastName, int age) {
+    public Student(String firstName, String lastName, int age, int image) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+
+        this.profilePhoto = image;
     }
     public Student() {
 
@@ -80,11 +81,11 @@ public class Student implements Serializable {
         this.subject = subject;
     }
 
-    public String getProfilePhoto() {
+    public int getProfilePhoto() {
         return profilePhoto;
     }
 
-    public void setProfilePhoto(String profilePhoto) {
+    public void setProfilePhoto(int profilePhoto) {
         this.profilePhoto = profilePhoto;
     }
 }
