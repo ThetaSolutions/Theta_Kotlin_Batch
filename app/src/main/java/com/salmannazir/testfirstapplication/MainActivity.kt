@@ -10,11 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val userName: String = intent.getStringExtra("userName")
-
-       var mObject:StudentInKotlin= intent.getSerializableExtra("") as StudentInKotlin
-        hello2.text = userName
-       // hello2.setText(userName)
+//        val userName: String = intent.getStringExtra("userName")
+//
+//       var mObject:StudentInKotlin= intent.getSerializableExtra("") as StudentInKotlin
+//        hello2.text = userName
+        hello2.setText("Main Activity")
 
 
     }

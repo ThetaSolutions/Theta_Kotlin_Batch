@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="myColour">#54d81b</color>
     <color name="titleColour">#0c66ed</color>
+    <color name="whiteCol">#ffffff</color>
 </resources>
