@@ -3,6 +3,7 @@ package com.salmannazir.testfirstapplication
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
 //       var mObject:StudentInKotlin= intent.getSerializableExtra("") as StudentInKotlin
 //        hello2.text = userName
         hello2.setText("Main Activity")
+        Toast.makeText(this, "", Toast.LENGTH_LONG).show()
+
 
 
     }
